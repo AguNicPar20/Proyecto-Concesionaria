@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOOF! Registro!</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="atraccion">
+                <a href="/">
+                    <img style="margin-left:30px;width:250px;height:75px;" src="/img/header/GarageLogo.png" alt="Banner GarageSN">
+                </a>
+            </div>
+                <div class="navegador">
+                    <% if (locals.isLogged) { %>
+                        <ul class="items">
+                            <li>
+                                <a href="/products/create">
+                                    <span style="color:rgb(253, 253, 253);">Crea un producto </span><i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/products/edit/"><span style="color:white;">Edita un producto </span><i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/products/detail/"><span style="color:white;">Detalle producto </span><i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </li>
+                        </ul>
+                
+
+                    <% }else { %>
+                        <ul style="margin-right:10%;">
+                            <li>
+                                <a href="/views/index"><span style="color:white;">Home<i class="fas fa-sign-in-alt"></i></span></a>
+                            </li><br>
+                            <li>
+                                <a href="/views/index"><span style="color:white;">Comprar <i class="fas fa-sign-in-alt"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="/views/index"><span style="color:white;">Vender <i class="fas fa-sign-in-alt"></i></span></a>
+                            </li>
+                        </ul>
+                    <% } %>
+
+
+                
+
+
+            
+        </nav>
+    </div>
+        <!--  BUSCADOR
+        <div class="buscador">
+        <div class="form" action="#" method="GET">
+            <input type="text" class="input" placeholder="Buscar">
+            <div class="submit"><i class="fa fa-search"></i></div>
+        </div> -->
+
+        </div>
+
+    </header>
+</body>

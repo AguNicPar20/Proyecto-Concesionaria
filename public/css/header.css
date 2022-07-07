@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --blanco-medio: #f5f3eb;
+    --gris: #3C3C3B;
+    --naranja: #FF701B;
+    --naranja-claro: #f7aa2c;
+    --celeste: #b0d0cf;
+    --rojo: #fc2020;
+    --azul-fuerte: #222d56;
+    --text-sm: 0.5em;
+    --text-md: 1.2em;
+    --text-lg: 1.5em;
+    --title-md: 2.4em;
+    --mochipop: 'Mochiy Pop One', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+}
+
+* {
+    font-family: var(--mochipop);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header { 
+    display: flex !important;
+    width: 100% !important;
+    background-color: var(--naranja) !important;
+    margin: 0;
+    justify-content: center !important;
+    height: 150px;
+}
+
+.usuario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.usuario:hover{
+    color: #5a5a5a;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+div.top-header p {
+    text-align: center;
+    flex-grow: 1;
+}
+
+div.top-header {
+    padding: 2.5em 0;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+
+
+}
+
+
+
+img.superior {
+    border-radius: 50%;
+    border: 5px solid #002050;
+    background-color: #aabad1;
+    max-height: 140px;
+    margin: 5px;
+    /* width: 100%; */
+
+}
+
+img.inferior {
+
+    background-color: white;
+}
+
+div.atraccion {
+    display: flex;
+    width: 100%;
+    height: 108px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    background-color: var(--gris);
+}
+
+div.buscador {
+    margin-top: -95px;
+    display: flex;
+}
+
+nav {
+    height: 115px;
+    width: 100%;
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+a.nav {
+    color: rgb(240, 240, 240);
+    text-decoration: underline;
+}
+
+.nav:hover{
+    color: #5a5a5a;
+}
+
+ul {
+    margin-left: 115px;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+div.navergador{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap; 
+justify-content: center;   
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+}
+
+input.interes {
+    padding: 10px;
+}
+
+
+
+a {
+    font-family: var(--mochipop);
+    text-decoration: none;
+    color: #5a5a5a;
+
+}
+
+li.servicio:hover {
+
+    color: black;
+
+}
+
+li.categoria:hover {
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+
+input.input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 50%;
+}
+
+div.password {
+    border: 1px solid #b7afaf;
+}
+
+div.formulario {
+    border: 1px solid #b7afaf;
+}
+
+div.ingreso {
+    width: 100%;
+    margin-left: 17px;
+
+}
+
+div.formingreso {
+    border: 1px solid #b7afaf;
+    display: flex;
+    flex-direction: column;
+}
+
+p.olvide.contraseña {
+    display: flex;
+    justify-content: center;
+}
+
+a.olvide.contraseña:hover {
+    color: black;
+}
+
+p.submit {
+    display: flex;
+    justify-content: center;
+}
+
+button.btningreso {
+    padding: 0.5em;
+    border-radius: 8px;
+    width: 80%;
+    justify-content: center;
+    background-color: var(--azul);
+    color: var(--celeste);
+}
+
+button.btningreso:hover {
+    transition: 0.5s ease;
+    background-color: var(--azul-fuerte);
+    cursor: pointer;
+}
+
+div.form {
+    width: 97%;
+    display: flex;
+    flex-grow: 2;
+    margin-top: 113px;
+    justify-content: center;
+}
+
+div.submit {
+    background-color: #979797;
+    padding: 10px;
+    border-radius: 0 8px 8px 0;
+}
+
+div.submit:hover {
+    cursor: pointer;
+    background-color: rgb(168, 168, 235)
+}
+
+@media (max-width: 513px) {
+    ul {
+        flex-direction: column;
+
+    }
+}
+
+
+
+
+
+
+@media (min-width: 769px) {
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
