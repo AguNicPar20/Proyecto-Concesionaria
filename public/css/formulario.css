@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --blanco-medio: #f5f3eb;
+    --gris: #3C3C3B;
+    --naranja: #FF701B;
+    --naranja-claro: #f7aa2c;
+    --celeste: #b0d0cf;
+    --rojo: #fc2020;
+    --azul-fuerte: #222d56;
+    
+  
+}
+input{
+    padding-left: 30px;
+}
+input.descripcion{
+    width: 66%;
+}
+button{
+    width: 20%;
+    background-color: black;
+    color: burlywood;
+}
+form{
+    background-color: var(--gris);
+    color: var(--naranja);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+img.formulario{
+    width: 100%;
+}
+div.formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}

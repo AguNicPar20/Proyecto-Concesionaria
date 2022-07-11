@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --blanco-medio: #f5f3eb;
+    --gris: #3C3C3B;
+    --naranja: #FF701B;
+    --naranja-claro: #f7aa2c;
+    --celeste: #b0d0cf;
+    --rojo: #fc2020;
+    --azul-fuerte: #222d56;
+    
+  
+}
+
+* {
+    font-size: 15px;
+    color: white;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+width: 100%;
+display: flex;
+background-color: var(--gris);
+}
+
+img.redes{
+    width: 2rem;
+}
+section.redes{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+section.nosotros{
+    width: 15%;
+}
+img.nosotros{
+    width: 100%;
+}
+section.contacto{
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+ul.contacto{
+    width: 0%;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li.contacto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    color: var(--naranja);
+}
+li{
+    list-style:none
+}
+
+div.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+a {
+    color: #000000;
+}

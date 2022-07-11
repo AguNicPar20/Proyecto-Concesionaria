@@ -3,8 +3,7 @@ const express = require('express');
 const app = express();
 
 var indexRouter = require('./routes/index');
-var productsRouter = require('./routes/products')
-
+var vehiculosRouter = require('./routes/vehiculos');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -15,8 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', indexRouter);
-app.use('/products', productsRouter)
-
+app.use("/vehiculos", vehiculosRouter);
 
 
 
