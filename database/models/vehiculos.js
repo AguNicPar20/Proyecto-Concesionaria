@@ -4,26 +4,37 @@ module.exports = function(sequileze, dataTypes) {
 
  let cols = {
     id:{
-        type: dataTypes.INTEGER,
+        type: dataTypes.BIGINT(10),
         primaryKey: true,
         autoIncrement: true
     },
-    categoria:{
-        type: dataTypes.INTEGER,
+    nombre: {
+        type: dataTypes.STRING
+    },
+    descripcion: {
+        type: dataTypes.TEXT
+    },
+    precio: {
+        type: dataTypes.INTEGER
+    },
+    imagen: {
+        type: dataTypes.STRING
+    },
+    categoria_id:{
+        type: dataTypes.BIGINT(10),
         primaryKey: true
     },
-    name: {
-        type: dataTypes.STRING
-    }
+   
+
 }
 let config = {
     tableName: "vehiculos",
     timestamps: false
 }
  
- let vehiculos = sequileze.define (alias, cols, config);
+ let Vehiculos = sequileze.define (alias, cols, config);
 
 
- return vehiculos;
+ return Vehiculos;
 }
    

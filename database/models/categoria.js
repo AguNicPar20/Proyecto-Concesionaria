@@ -9,7 +9,7 @@ module.exports = function(sequileze, dataTypes) {
         autoIncrement: true
     },
 
-    name: {
+    nombre: {
         type: dataTypes.STRING
     }
 }
@@ -18,9 +18,9 @@ let config = {
     timestamps: false
 }
  
- let categorias = sequileze.define (alias, cols, config);
+ let Categorias = sequileze.define (alias, cols, config);
 
 
- return categorias;
+ return Categorias;
 }
    

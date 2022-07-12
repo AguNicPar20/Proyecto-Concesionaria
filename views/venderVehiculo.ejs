@@ -9,33 +9,33 @@
 <p><img src="/img/vendetuauto.png" class="formulario" alt=""></p>
 
 
-<form action="/venderVehiculo" method="post" enctype="multipart/form-data">
+<form action="newVehiculo" method="post" enctype="multipart/form-data">
     <div class="formulario">
         <label for="">Titulo</label>
-        <input type="text" name="titulo">
+        <input type="text" name="nombre">
     </div>
     <div class="formulario">
-        <label for="">Descripción</label>
-        <input type="text" name="descripción" class="descripcion">
+        <label for="">Descripcion</label>
+        <input type="text" name="descripcion" class="descripcion">
     </div>
-    <div class="formulario">
-        <label for="">Kilometros</label>
-        <input type="numer" name="km">
-    </div>
+
     <div class="formulario">
         <label for="">Precio</label>
         <input type="number" name="precio">
     </div>
     <div class="formulario">
-        <label for="">Categoria</label>
+        <label for="">Imagen de perfil</label>
+        <input type="file" name="imagenvehiculo">
+    </div>
+    <div class="formulario">
+        <label for="">Elija la categoria</label>
         <select name="categoria">
-            <% for (let i = 0; i < categorias.lenght; i++) {%> 
-                <option value="<%=categorias[i].id%>">
-                    <%=categorias[i].name%> 
-                </option>
-            <%} %>
+            <% categorias.forEach((categoria)=>{%>
+                <option value="<%= categoria.id %>"><%= categoria.nombre%></option>
+            <% }) %>
         </select>
     </div>
+    
     <button  type="submit"> Crear </button>
 </form>
 

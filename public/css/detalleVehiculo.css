@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.div-productDetail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin: 10px;
+    align-content: stretch;
+    padding: 10px;
+    color: #274277;
+}
+
+.container-Detail{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.div-BTN{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    background-color: #274277;
+    color: white;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #274277;
+}
