@@ -19,13 +19,13 @@
       </div>
       
       <div class="products-container">
-       <a href="/vehiculos/actualizarVehiculo/<%= vehiculo.id %>"> <article>
+       <article>
           <img src="/imagenVehiculo/<%= vehiculo.imagen %>" alt="">
           <p>
           <div class="product-card" style="background-color: white">
             <h1 class="description"><%= vehiculo.nombre %></h1>
             <div class="flex-row">
-              <p class="price">u$s <%= vehiculo.precio %></p>
+              <p class="price">$ <%= vehiculo.precio %></p>
             </div>
             <h3 class="description"><%= vehiculo.descripcion %> </h3>
           </div>
@@ -33,6 +33,7 @@
         </article>
       </a>
       </div>
+      <p class="btn"> <a href="/vehiculos/actualizarVehiculo/<%= vehiculo.id %>">Modificar</button></a></p>
     </section>
   </main>
   <footer>

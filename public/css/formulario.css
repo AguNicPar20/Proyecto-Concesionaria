@@ -20,6 +20,7 @@
     justify-content: center;
     align-self: center;
     flex-direction: column;
+    width: 50%;
   
 }
 input{
@@ -32,14 +33,16 @@ input{
     padding-left: 30px;
 }
  
-input.descripcion{
-    width: 66%;
+.descripcion{
+
+    width: 100%;
 }
 button{
     width: 20%;
     background-color: black;
     color: burlywood;
 }
+
 .btn{
     background-color: #e7e7e7;
     color: var(--naranja);
@@ -67,4 +70,8 @@ img.formulario{
 label{
     margin-right: 1rem;
     color: var(--naranja);
+}
+.btnmod:hover{
+    cursor: pointer;
+    background-color: var(--naranja);
 }

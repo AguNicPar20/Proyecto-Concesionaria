@@ -6,22 +6,21 @@
 <%-include('partials/header.ejs')%>
 </header>
        
-<p><a href=""><img src="/img/vendetuauto.png" class="formulario" alt=""></a></p>
 
 <div class="inputs">
-<form action="/vehiculos/updateVehiculo" method="post" enctype="multipart/form-data">
+<form action="/vehiculos/updateVehiculo/<%= vehiculo.id%>" method="POST" enctype="multipart/form-data">
     <div class="formulario">
         <label for="">Titulo</label>
-        <input type="text" name="nombre" value="<%= vehiculo.nombre %>">
+        <input type="text" name="nombre" value="<%= vehiculo.nombre %>" required minlength="1">
     </div>
     <div class="formulario">
         <label for="">Descripcion</label>
-        <input type="text" name="descripcion" class="descripcion" value="<%= vehiculo.descripcion %>">
+        <input type="text" name="descripcion" class="descripcion" value="<%= vehiculo.descripcion %>" required minlength="10">
     </div>
 
     <div class="formulario">
         <label for="">Precio</label>
-        <input type="number" name="precio" value="<%= vehiculo.precio %>">
+        <input type="number" name="precio" value="<%= vehiculo.precio %>" required min="10">
     </div>
     <div class="formulario">
         <label for="">Imagen de perfil</label>
@@ -29,7 +28,7 @@
     </div>
 
     
-    <button  type="submit" class="btn"> Modificar </button>
+    <button  type="submit" class="btnmod"> Modificar </button>
 </form>
 </div>
    </body>

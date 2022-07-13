@@ -29,6 +29,7 @@ footer {
 width: 100%;
 display: flex;
 background-color: var(--gris);
+margin-top: 50px;
 }
 
 img.redes{
@@ -37,6 +38,8 @@ img.redes{
 section.redes{
     padding-left: 3rem;
     padding-right: 3rem;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 section.nosotros{
     width: 15%;
@@ -50,6 +53,7 @@ section.contacto{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-left: 90px;
 }
 ul.contacto{
     width: 0%;
@@ -76,7 +80,9 @@ div.footer{
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
 }
 a {
-    color: #000000;
+    color: #FFFFFF;
 }

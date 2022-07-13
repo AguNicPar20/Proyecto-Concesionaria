@@ -171,6 +171,12 @@ article div.product-card {
         max-width: 45%;
     }   
 }
+.btn{
+    background-color: rgb(3, 3, 3);
+   
+    
+}
+
 
 @media screen and (min-width: 700px) {
     .products-container article {
@@ -181,15 +187,6 @@ article div.product-card {
 @media screen and (min-width:949px){
    
 
-    .products-container {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        background-image: url("/img/Background naranja.png") !important;
-        background-repeat: repeat !important
-    }
     .products-container div img {
         display: flex;
         gap: 10px;

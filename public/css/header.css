@@ -28,17 +28,24 @@ header{
     background-color: var(--naranja);
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 div.atraccion{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-top: 30px;
+    
 }
 div.navegador{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 20px;
+    font-size: 30px;
 }
 ul.items{
     display: contents;

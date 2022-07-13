@@ -6,7 +6,7 @@
 <%-include('partials/header.ejs')%>
 </header>
        
-<p><img src="/img/vendetuauto.png" class="formulario" alt=""></p>
+
 
 <div class="inputs">
 <form action="newVehiculo" method="post" enctype="multipart/form-data">
@@ -21,20 +21,20 @@
     <% } %>
     <div class="formulario">
         <label for="">Titulo</label>
-        <input type="text" name="nombre">
+        <input type="text" name="nombre" required minlength="1">
     </div>
     <div class="formulario">
         <label for="">Descripcion</label>
-        <input type="text" name="descripcion" class="descripcion">
+        <input type="text" name="descripcion" class="descripcion" required minlength="10 caracteres">
     </div>
 
     <div class="formulario">
         <label for="">Precio</label>
-        <input type="number" name="precio">
+        <input type="number" name="precio" required min="10">
     </div>
     <div class="formulario">
         <label for="">Imagen de perfil</label>
-        <input type="file" name="imagenvehiculo">
+        <input type="file" name="imagenvehiculo" required>
     </div>
     <div class="formulario">
         <label for="">Elija la categoria</label>

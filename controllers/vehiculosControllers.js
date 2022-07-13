@@ -1,5 +1,6 @@
 const path= require ("path");
-const db = require("../database/models")
+const db = require("../database/models");
+const {validationResult}=require('express-validator')
 
 let controllers = {
    vehiculoList: function (req, res) {
@@ -8,7 +9,7 @@ let controllers = {
          return res.render ("vehiculoList.ejs", {vehiculos});
       })
    },
-   venderVehiculo: function(req, res, next){
+   venderVehiculo: function(req, res){
       db.Categorias.findAll().then((categorias)=>{
          res.render("venderVehiculo",{
             categorias
@@ -31,15 +32,20 @@ let controllers = {
          imagen : req.file.filename,
          categoria_id : req.body.categoria,
       })
-      res.render("detalleVehiculo.ejs", {vehiculo})
+      res.render("cargaExitosa", {vehiculo})
    },
    actualizarVehiculo:(req, res) => {
       db.Vehiculos.findByPk(req.params.id)
       .then(vehiculo => {res.render("actualizarVehiculo", {vehiculo})})   
    },
    updateVehiculo: function (req, res) {
-      db.Vehiculos.update(req.body)
-      .then(vehiculo => {res.render("vehiculoList", {vehiculo})}) 
+      db.Vehiculos.update(req.body, {
+         where:{
+            id:req.params.id
+         }
+      })
+      .then(vehiculo => {res.render("cargaExitosa", {vehiculo})}) 
+      
    },
 };
 
