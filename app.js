@@ -1,7 +1,6 @@
 const path = require('path');
 const express = require('express');
 const app = express();
-
 var indexRouter = require('./routes/index');
 var vehiculosRouter = require('./routes/vehiculos');
 

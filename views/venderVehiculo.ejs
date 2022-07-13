@@ -8,8 +8,17 @@
        
 <p><img src="/img/vendetuauto.png" class="formulario" alt=""></p>
 
-
+<div class="inputs">
 <form action="newVehiculo" method="post" enctype="multipart/form-data">
+    <% if(typeof errors != 'undefined'){ %>
+        <ul class="claseNueva">
+            <% for (let i = 0; i < errors.length; i++) { %>
+                <li style="color:red; padding-left: 20px;" class="claseNueva">
+                    <%= errors[i].msg %>
+                </li>
+            <% } %> 
+        </ul>
+    <% } %>
     <div class="formulario">
         <label for="">Titulo</label>
         <input type="text" name="nombre">
@@ -36,7 +45,8 @@
         </select>
     </div>
     
-    <button  type="submit"> Crear </button>
+    <button  type="submit" class="btn"> Crear </button>
 </form>
-
-
+</div>
+   </body>
+</html>

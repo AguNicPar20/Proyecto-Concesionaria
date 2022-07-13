@@ -1,8 +1,9 @@
-const express = require ("express");
+const express = require("express");
 var router = express.Router();
-const controllers = require ("../controllers/vehiculosControllers")
+const controllers = require("../controllers/vehiculosControllers")
 const multer = require('multer');
-const path = require ("path");
+const path = require("path");
+const validator = require("../middleware/validator");
 const storage = multer.diskStorage({
 	destination: (req,file,callback) => {
 		callback(null, path.join(__dirname,'../public/imagenVehiculo'))
@@ -14,8 +15,10 @@ const storage = multer.diskStorage({
 const upload = multer({storage});
 //creacion
 
-router.get("/", controllers.vehiculoList);
+router.get("/vehiculoList", controllers.vehiculoList);
 router.get("/detalleVehiculo/:id", controllers.detalleVehiculo);
 router.get("/venderVehiculo", controllers.venderVehiculo);
-router.post ("/newVehiculo", upload.single("imagenvehiculo"), controllers.guardarVehiculo);
+router.get("/actualizarVehiculo/:id", controllers.actualizarVehiculo);
+router.post ("/newVehiculo", upload.single("imagenvehiculo"), validator, controllers.guardarVehiculo);
+router.post ("/updateVehiculo", upload.single("imagenvehiculo"), validator, controllers.updateVehiculo);
 module.exports = router;

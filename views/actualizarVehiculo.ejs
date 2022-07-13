@@ -1,0 +1,36 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/formulario.css">
+    <title>GarageSN</title>
+</head>
+<header>
+<%-include('partials/header.ejs')%>
+</header>
+       
+<p><a href=""><img src="/img/vendetuauto.png" class="formulario" alt=""></a></p>
+
+<div class="inputs">
+<form action="/vehiculos/updateVehiculo" method="post" enctype="multipart/form-data">
+    <div class="formulario">
+        <label for="">Titulo</label>
+        <input type="text" name="nombre" value="<%= vehiculo.nombre %>">
+    </div>
+    <div class="formulario">
+        <label for="">Descripcion</label>
+        <input type="text" name="descripcion" class="descripcion" value="<%= vehiculo.descripcion %>">
+    </div>
+
+    <div class="formulario">
+        <label for="">Precio</label>
+        <input type="number" name="precio" value="<%= vehiculo.precio %>">
+    </div>
+    <div class="formulario">
+        <label for="">Imagen de perfil</label>
+        <input type="file" name="imagenvehiculo">
+    </div>
+
+    
+    <button  type="submit" class="btn"> Modificar </button>
+</form>
+</div>
+   </body>
+</html>
