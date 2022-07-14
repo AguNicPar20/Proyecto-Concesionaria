@@ -143,21 +143,19 @@ article div.product-card {
     content: "\f0d1";
     color: black;
 }
+p.btn{
+    display: flex;
+    flex-direction: column;
+    width: 7%;
+    margin-left: 7%;
+}
 
 
 
 @media screen and (min-width: 538px){
    
     
-    .products-container {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        background-image: url("/img/Background naranja.png") !important;
-        background-repeat: repeat !important
-    }
+   
     .products-container div img {
         display: flex;
         gap: 10px;
